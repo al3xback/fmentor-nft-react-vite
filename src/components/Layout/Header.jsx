@@ -3,7 +3,7 @@ import './Header.scss';
 const Header = () => {
 	return (
 		<header>
-			<h1 className="sr-only">NFT</h1>
+			<h1 className="sr-only">NFT preview card component</h1>
 		</header>
 	);
 };
