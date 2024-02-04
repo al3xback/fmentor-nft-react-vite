@@ -6,7 +6,12 @@ const Card = () => {
 	return (
 		<article className="card">
 			<div className="card__image">
-				<img width="302" height="302" src={equilibriumImage} alt="Equilibrium" />
+				<img
+					width="302"
+					height="302"
+					src={equilibriumImage}
+					alt="Equilibrium"
+				/>
 			</div>
 			<div className="card__content">
 				<h2 className="card__title">
