@@ -20,7 +20,7 @@ Users should be able to:
 ### Built with
 
 - Semantic HTML5 markup
-- React + vite
+- React + Vite
 - Mobile-first workflow
 
 ## Author
