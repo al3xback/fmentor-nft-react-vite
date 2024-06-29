@@ -1,9 +1,10 @@
-footer,
-footer .container {
+.footer,
+.container {
 	display: flex;
+	flex-direction: column;
 }
 
-footer {
+.footer {
 	position: absolute;
 	left: 0;
 	bottom: 0;
@@ -13,11 +14,6 @@ footer {
 	text-align: center;
 }
 
-footer .container,
-footer p {
-	flex: auto;
-}
-
-footer p {
+.footer p {
 	font-size: inherit;
 }

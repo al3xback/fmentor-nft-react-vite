@@ -1,16 +1,17 @@
-import './Footer.scss';
+import styles from './Footer.module.css';
 
-const Footer = () => {
+export default function Footer() {
 	return (
-		<footer>
-			<div className="container">
+		<footer className={styles.footer}>
+			<div className={styles.container}>
 				<p>
 					Challenge by&nbsp;
 					<a
 						href="https://www.frontendmentor.io?ref=challenge"
 						className="btn btn--link"
 						rel="noopener noreferrer"
-						target="_blank">
+						target="_blank"
+					>
 						Frontend Mentor
 					</a>
 					. Coded by&nbsp;
@@ -18,7 +19,8 @@ const Footer = () => {
 						href="https://github.com/al3xback"
 						className="btn btn--link"
 						rel="noopener noreferrer"
-						target="_blank">
+						target="_blank"
+					>
 						al3xback
 					</a>
 					.
@@ -26,6 +28,4 @@ const Footer = () => {
 			</div>
 		</footer>
 	);
-};
-
-export default Footer;
+}

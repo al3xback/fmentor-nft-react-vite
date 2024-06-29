@@ -96,6 +96,7 @@ sw.*
 *.swp
 
 # Project related files
-src/assets/css/main.*
 README.md
 style-guide.md
+jsconfig.json
+vite.config.js

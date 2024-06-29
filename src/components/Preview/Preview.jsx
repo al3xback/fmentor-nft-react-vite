@@ -1,11 +1,11 @@
-import equilibriumImage from '../../assets/images/equilibrium.jpg';
-import avatarImage from '../../assets/images/avatar.png';
-import './Card.scss';
+import equilibriumImage from '../../assets/equilibrium.jpg';
+import avatarImage from '../../assets/avatar.png';
+import styles from './Preview.module.css';
 
-const Card = () => {
+export default function Preview() {
 	return (
-		<article className="card">
-			<div className="card__image">
+		<article className={styles.preview}>
+			<div className={styles.image}>
 				<img
 					width="302"
 					height="302"
@@ -13,34 +13,33 @@ const Card = () => {
 					alt="Equilibrium"
 				/>
 			</div>
-			<div className="card__content">
-				<h2 className="card__title">
+			<div className={styles.content}>
+				<h2 className={styles.title}>
 					<a href="#/" className="btn btn--link">
 						Equilibrium #3429
 					</a>
 				</h2>
-				<p className="card__desc">
+				<p className={styles.desc}>
 					Our Equilibrium collection promotes balance and calm.
 				</p>
-				<ul className="card__stats-list">
-					<li className="card__stats-list-item">
+				<ul className={styles.statuses}>
+					<li>
 						<i className="icon-ethereum" aria-hidden="true"></i>
 						<span>0.041 ETH</span>
 					</li>
-					<li className="card__stats-list-item">
+					<li>
 						<i className="icon-clock" aria-hidden="true"></i>
 						<span>3 days left</span>
 					</li>
 				</ul>
-				<div className="card__author">
+				<div className={styles.author}>
 					<img
-						className="card__author-img"
 						width="33"
 						height="33"
 						src={avatarImage}
 						alt="Jules Wyvern"
 					/>
-					<span className="card__author-desc">
+					<span className={styles.text}>
 						Creation of&nbsp;
 						<a href="#/" className="btn btn--link">
 							Jules Wyvern
@@ -50,6 +49,4 @@ const Card = () => {
 			</div>
 		</article>
 	);
-};
-
-export default Card;
+}
